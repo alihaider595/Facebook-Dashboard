@@ -1,0 +1,355 @@
+body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: 56px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .logo {
+            font-size: 40px;
+            color: #1877f2;
+            margin-right: 16px;
+            cursor: pointer;
+        }
+
+        .search-container {
+            position: relative;
+            max-width: 320px;
+            width: 100%;
+        }
+
+        .search-input {
+            width: 100%;
+            height: 40px;
+            padding: 0 16px 0 40px;
+            border: none;
+            border-radius: 50px;
+            background-color: #f0f2f5;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .search-input::placeholder {
+            color: #65676b;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #65676b;
+            font-size: 16px;
+        }
+
+        .header-center {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            max-width: 590px;
+        }
+
+        .nav-tabs {
+            display: flex;
+            height: 56px;
+        }
+
+        .nav-tab {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 110px;
+            height: 100%;
+            cursor: pointer;
+            border-bottom: 4px solid transparent;
+            transition: all 0.2s;
+            color: #65676b;
+        }
+
+        .nav-tab:hover {
+            background-color: #f0f2f5;
+        }
+
+        .nav-tab i {
+            font-size: 24px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+            justify-content: flex-end;
+            min-width: 260px;
+        }
+
+        .header-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #e4e6ea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            color: #050505;
+        }
+
+        .header-icon:hover {
+            background-color: #d8dadf;
+        }
+
+        .profile-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 4px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .profile-btn:hover {
+            background-color: #f0f2f5;
+        }
+
+        .profile-pic {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1877f2, #42a5f5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .main-container {
+            display: flex;
+            max-width: 1920px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .left-sidebar {
+            width: 360px;
+            padding: 20px 8px 20px 16px;
+            position: fixed;
+            height: calc(100vh - 56px);
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .left-sidebar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .sidebar-section {
+            margin-bottom: 16px;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-bottom: 4px;
+        }
+
+        .sidebar-item:hover {
+            background-color: #e4e6ea;
+        }
+
+        .sidebar-item-icon {
+            width: 36px;
+            height: 36px;
+            margin-right: 12px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .sidebar-item-text {
+            font-size: 15px;
+            font-weight: 500;
+            color: #050505;
+        }
+
+        
+        .main-feed {
+            margin-left: 360px;
+            margin-right: 360px;
+            padding: 20px 32px;
+            min-height: calc(100vh - 56px);
+        }
+
+
+        .post-composer {
+          width: 600px;
+          height: 150px;
+          margin-left: 440px;
+          margin-top: 10px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            padding: 12px 16px 10px;
+            margin-bottom: 16px;
+        }
+
+        .composer-top {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .composer-input {
+            flex: 1;
+            background-color: #f0f2f5;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .composer-input::placeholder {
+            color: #65676b;
+        }
+
+        .composer-divider {
+            height: 1px;
+            background-color: #e4e6ea;
+            margin: 10px 0;
+        }
+
+        .composer-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .composer-action {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            font-weight: 500;
+            font-size: 15px;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .composer-action:hover {
+            background-color: #f0f2f5;
+        }
+
+        .live-video { color: #f3425f; }
+        .photo-video { color: #45bd62; }
+        .feeling-activity { color: #f7b928; }
+
+       
+         
+        @media (max-width: 1100px) {
+            .right-sidebar {
+                display: none;
+            }
+            
+            .main-feed {
+                margin-right: 0;
+            }
+        }
+        
+
+        @media (max-width: 900px) {
+            .left-sidebar {
+                display: none;
+            }
+            
+            .main-feed {
+                margin-left: 0;
+                padding: 20px 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-center {
+                display: none;
+            }
+            
+            .search-container {
+                max-width: 200px;
+            }
+            
+            .header-right {
+                min-width: auto;
+                gap: 4px;
+            }
+            
+            .main-feed {
+                padding: 16px 8px;
+            }
+            .post-composer{
+              width: 200px;
+            }
+            
+       
+        }
+
+        @media (max-width: 480px) {
+            .search-container {
+                display: none;
+            }
+            
+            .header-left {
+                min-width: auto;
+            }
+            
+            .composer-actions {
+                flex-direction: column;
+                gap: 8px;
+            }
+            
+            .composer-action {
+                justify-content: flex-start;
+            }
+        }
