@@ -6,6 +6,7 @@
   <title>facebook</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
   <header class="header">
@@ -59,9 +60,16 @@
 <div class="post-composer">
   <div class="composer-top">
       <div class="profile-pic">JD</div>
-      <input type="text" class="composer-input" placeholder="What's on your mind?">
-      <input type="file">
+      <input type="text" class="composer-input" placeholder="What's on your mind?"  id="description">
+      <input type="file" id="file">
   </div>
+  
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary"
+        data-bs-dismiss="modal" style="margin-right: 4px;">Cancel</button>
+    <button type="button" class="btn btn-primary" onclick="post()">Post</button>
+</div>
+
   <div class="composer-divider"></div>
   <div class="composer-actions">
       <div class="composer-action live-video">
@@ -79,6 +87,11 @@
   </div>
 </div>
 
+
+
+<div id="post">
+                
+</div>
 
   <div class="main-container">
     <aside class="left-sidebar">
@@ -136,33 +149,9 @@
             
                
         </div>
-  
-       
-    <main class="main-feed">
-        <div class="post-composer">
-            <div class="composer-top">
-                <div class="profile-pic">JD</div>
-                <input type="text" class="composer-input" placeholder="What's on your mind, John?">
-            </div>
-            <div class="composer-divider"></div>
-            <div class="composer-actions">
-                <div class="composer-action live-video">
-                    <i class="fas fa-video"></i>
-                    <span>Live video</span>
-                </div>
-                <div class="composer-action photo-video">
-                    <i class="fas fa-images"></i>
-                    <span>Photo/video</span>
-                </div>
-                <div class="composer-action feeling-activity">
-                    <i class="fas fa-smile"></i>
-                    <span>Feeling/activity</span>
-                </div>
-            </div>
-        </div>
-  
-        
-       
-  </div>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
 </html>

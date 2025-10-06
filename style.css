@@ -221,8 +221,8 @@ body {
 
 
         .post-composer {
-          width: 600px;
-          height: 150px;
+          width: 660px;
+          height: 180px;
           margin-left: 440px;
           margin-top: 10px;
             background-color: #ffffff;
@@ -286,7 +286,31 @@ body {
         .live-video { color: #f3425f; }
         .photo-video { color: #45bd62; }
         .feeling-activity { color: #f7b928; }
-
+        .postCard {
+           
+            margin-top: 10px;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 20px;
+          }
+          
+          .postCardHeader {
+            cursor: pointer;
+          }
+          
+          .imgBox  {
+            display: flex;
+            justify-content: center;
+            width: 600px;
+            height: 400px;
+          }
+          
+          .imgBox > img {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+          }
        
          
         @media (max-width: 1100px) {
