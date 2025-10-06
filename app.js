@@ -1,20 +1,14 @@
-// console.log("Js Running ==> ")
 
 function post() {
-    // console.log("mai chl raha hon")
     var description = document.getElementById("description");
     var image = document.getElementById("file");
-  //   console.log(image)
     var post = document.getElementById("post");
-    // console.log(description.value)
-    // console.log(image.value)
-    // console.log(post)
+    
   
     var file = image.files[0]
     var imgUrl = URL.createObjectURL(file)
   
-  //   console.log(imgUrl)
-    // post.innerHTML = "<h1> Hasan </h1>"
+  
     post.innerHTML += `
       <div class="postCard">
   
@@ -52,15 +46,4 @@ function post() {
       image.files = " "
   }
   
-  // var lastName = "Ashraf";
-  
-  // // var myName = "Hasan" + " " + lastName
-  
-  // var myName = `Hasan ${lastName}`;
-  // console.log(myName);
-  
-  
-  var newNum = 6;
-  newNum +=  6
-  
-  console.log(newNum)
+ 
